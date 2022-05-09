@@ -1,0 +1,84 @@
+body {
+  background: #e2dfdf;
+}
+h2{
+  text-align: center;
+  font-size: 50px;
+}
+.btns{
+  display: block;
+  width: 300px;
+  margin: 15px;
+  align-items: center;
+}
+.btn {
+  display: block;
+  width: 300px;
+  height: 65px;
+  margin: 15px;
+  align-items: center;
+}
+.top{
+  top: 40px;
+}
+.top2{
+  top: 7px;
+}
+.note .wrapper {
+  border: 1px solid #666;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.note .wrapper .bg {
+  visibility: hidden;
+  display: flex;
+  margin: auto;
+  height: 50vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.note .wrapper .bg span {
+  color: white;
+  font-size: 200px;
+  -webkit-text-stroke: 1px black;
+}
+.note .wrapper .bg.active {
+  visibility: visible;
+}
+.note[data-note=C] .bg {
+  background: #12e6e6;
+}
+.note[data-note="C#"] .bg {
+  background: #1944a1;
+}
+.note[data-note=D] .bg {
+  background: #166bc0;
+}
+.note[data-note="D#"] .bg {
+  background: #6e1b9e;
+}
+.note[data-note=E] .bg {
+  background: #7311b4;
+}
+.note[data-note=F] .bg {
+  background: #a223c5;
+}
+.note[data-note="F#"] .bg {
+  background: #ef2f24;
+}
+.note[data-note=G] .bg {
+  background: #faba1a;
+}
+.note[data-note="G#"] .bg {
+  background: #fae444;
+}
+.note[data-note=A] .bg {
+  background: #8fda24;
+}
+.note[data-note="A#"] .bg {
+  background: #1aaf3a;
+}
+.note[data-note=B] .bg {
+  background: #1acf8f;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas Musicais</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Notas Musicais</h2>
+        <select name="notes" id="notes" class="d-block mb-3 mx-auto custom-select">
+          <option value="natural">C, D, E, F, G, A e B</option>
+          <option value="sharp">C#, D#, F#, G# e A#</option>
+          <option value="full">Naturais e Sustenidos</option>
+        </select>
+      </div>
+      <div class="col-4 top">
+        <section class="control mt-3">
+          <div class="container-flex bg">
+            <div class="btns">
+              <button type="button" class="noteC btn btn-outline-primary">
+                Nota Dó
+              </button>
+              <button type="button" class="iniciar btn btn-outline-primary">
+                Gerar Nova Nota
+              </button>
+              <button type="button" class="repetir btn btn-outline-primary">
+                Repetir Nota
+              </button>
+              <button type="button" class="show btn btn-outline-primary">
+                Mostrar Nota
+              </button>
+            </div>
+          </div>
+        </section>
+
+      </div>
+      <div class="col-8 note mt-5 top2">
+        <div class="wrapper">
+          <div class="bg">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
