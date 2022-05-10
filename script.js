@@ -1,12 +1,14 @@
 const note = new Audio();
-//Notas
 const baseDir = "./notas/";
 const natural = ["C", "D", "E", "F", "G", "A", "B"];
 const sharp = ["C#", "D#", "F#", "G#", "A#"];
 const full = [...natural, ...sharp];
 let selectedNotes = natural;
 let actualNote = null;
-//Seletores
+
+
+
+
 const iniciarTraining = document.querySelector(".iniciar");
 const blockNote = document.querySelector(".note");
 const showBlockNote = document.querySelector(".note .bg");
@@ -15,7 +17,10 @@ const showNote = document.querySelector(".show");
 const select = document.querySelector("select");
 const span = document.querySelector("span");
 const noteC = document.querySelector(".noteC");
-//Eventos
+
+
+
+
 select.addEventListener("change", handleChange);
 iniciarTraining.addEventListener("click", handleInit);
 
@@ -28,7 +33,10 @@ showNote.addEventListener("click", () => {
   showBlockNote.classList.add("active");
 });
 noteC.addEventListener("click", handleNoteC);
-//Funções
+
+
+
+
 function handleNoteC() {
   note.src = "./notas/CGrave.wav";
   note.play();
